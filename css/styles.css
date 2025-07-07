@@ -1,0 +1,114 @@
+/* Lacrosse Stats Tracker - Custom Styles */
+
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+/* Stat Cards */
+.stat-card {
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Table Styles */
+.table th {
+    background-color: #f8f9fa;
+}
+
+/* Calendar Styles */
+#calendar {
+    height: 600px;
+}
+
+.fc-event {
+    cursor: pointer;
+}
+
+/* Custom Colors for Event Types */
+.event-game {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.event-practice {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+
+.event-tournament {
+    background-color: #6f42c1 !important;
+    border-color: #6f42c1 !important;
+}
+
+.event-other {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+/* Player Stats */
+#player-stats-container .card {
+    transition: all 0.3s ease;
+}
+
+#player-stats-container .card:hover {
+    background-color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+    
+    #calendar {
+        height: 400px;
+    }
+}
+
+/* Custom animations */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Custom button styles */
+.btn-lacrosse {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    color: white;
+}
+
+.btn-lacrosse:hover {
+    background-color: #5a32a3;
+    border-color: #5a32a3;
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+}
